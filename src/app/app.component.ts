@@ -9,14 +9,15 @@ import { QuizService } from './quiz.service';
 export class AppComponent {
 
   constructor(private quizSvc: QuizService) {
-
-    console.log(this.quizSvc.getQuizzes());
-    
+    //console.log(this.quizSvc.getQuizzes());
+    this.quizzes = this.quizSvc.getQuizzes();
   }
 
   title = 'quiz-editor';
   
   myWidth = 250;
+
+  quizzes = [];
 
   get titleColor() {
     return this.myWidth > 250 ? "pink" : "black";
