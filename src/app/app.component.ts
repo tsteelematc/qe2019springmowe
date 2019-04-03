@@ -23,6 +23,11 @@ export class AppComponent {
   myWidth = 250;
 
   quizzes: QuizDisplay[] = [];
+  selectedQuiz: QuizDisplay = undefined;
+
+  setSelectedQuiz(q: QuizDisplay) {
+    this.selectedQuiz = q;
+  }
 
   get titleColor() {
     return this.myWidth > 250 ? "pink" : "black";
