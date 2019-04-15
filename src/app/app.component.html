@@ -1,19 +1,10 @@
 <div class='container'>
   <div class='row'>
     <div class='col-md-4'>
-      <div class='list-gorup'>
-        <div class='list-group-item list-group-item-action' *ngFor='let q of quizzes'>
-          {{ q.name }}
-          <span class='badge badge-secondary'>{{ q.numberOfQuestions }}</span>
-        </div>
-      </div>
+      Quiz List
     </div>
     <div class='col-md-8'>
       Quiz Details
     </div>
   </div>
 </div>
-
-<script>
-  console.log(getQuizzes());
-</script>
