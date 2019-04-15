@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
+  constructor(private quizSvs : quizeService)
+
+  quizzes     = [];
+  this.quizzes = this.quizSvs.getQuizzes();
   title       = 'quiz-editor';
   myWidth     = 250;
   get titleColor() {
@@ -26,4 +30,5 @@ export class AppComponent {
   get listBackgroundColor() {
     return this.myWidth > 250 ? true : false;
   }
+
 }
