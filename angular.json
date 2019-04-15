@@ -24,7 +24,11 @@
             ],
             "styles": [
               "src/styles.css"
+<<<<<<< HEAD
               ,"node_modules/bootstrap/dist/css/bootstrap.min.css"
+=======
+              , "node_modules/bootstrap/dist/css/bootstrap.min.css"
+>>>>>>> 383e70b3b9c7ab6e4f3b93ccbe91fe543c106b3b
             ],
             "scripts": [],
             "es5BrowserSupport": true
